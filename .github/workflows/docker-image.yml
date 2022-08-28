@@ -20,16 +20,16 @@ jobs:
       -
         name: Build and push
         id: docker_build_api_gateway
-        run: docker build . --file ./services/apigateway/Dockerfile --tag abbiyudha/api-gateway:latest
+        run: docker build . --file ./Dockerfile --tag abbiyudha/api-gateway:latest
       
       -
         name: Build and push
         id: docker_build_user_service
-        run: docker build . --file ./services/user-service/Dockerfile --tag abbiyudha/user-service:latest
+        run: docker build . --file ./Dockerfile --tag abbiyudha/user-service:latest
 
       
       -
         name: Build and push
         id: docker_build_admin_service
-        run: docker build . --file ./services/admin-service/Dockerfile --tag abbiyudha/admin-service:latest
+        run: docker build . --file ./Dockerfile --tag abbiyudha/admin-service:latest
 
