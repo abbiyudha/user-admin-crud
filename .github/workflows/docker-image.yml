@@ -24,7 +24,7 @@ jobs:
         with:
           push: true
           tags: abbiyudha/api-gateway:latest
-          file: ./services/apigateway
+          file: ./services/apigateway/Dockerfile
       
       -
         name: Build and push
@@ -33,7 +33,7 @@ jobs:
         with:
           push: true
           tags: abbiyudha/user-service:latest
-          file: ./services/user-service
+          file: ./services/user-service/Dockerfile
       
       -
         name: Build and push
@@ -42,4 +42,4 @@ jobs:
         with:
           push: true
           tags: abbiyudha/admin-service:latest
-          file: ./services/admin-service
+          file: ./services/admin-service/Dockerfile
